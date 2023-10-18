@@ -76,6 +76,7 @@ function next(){
         alert("No more artwork!");
     }
 }
+
 function prev(){
     if(idx>0){
         idx=idx-1;
