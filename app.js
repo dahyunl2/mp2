@@ -69,7 +69,8 @@ async function generateList(){
 
         let image_id=boxData.image_id;
         let image_src=iiif+"/"+image_id+"/full/200,/0/default.jpg";
-        imgsrc.push(image_src)
+        let bigimage=iiif+"/"+image_id+"/full/400,/0/default.jpg";
+        imgsrc.push(bigimage)
         let title=boxData.title;
         let artist=boxData.artist_display;
         if (artist.length>200){
@@ -91,7 +92,7 @@ function detail(index){
     idx=parseInt(index);
     data=globaldf[idx];
     img_src=imgsrc[idx];
-    let x ="<div id=imgmodal><img src='"+img_src+"' class=image_detail></img><div>"+"<div id=modalcontent><p>ID: "+data.id+"</p> <p> Score: "+data._score+"</p> <p>Title: "+data.title+"</p> <p>Artist: "+data.artist_display+"</p>"+"</p>Date: "+data.date_display+"</p>Artwork Type: "+data.artwork_type_title+"</p>Place of Origin: "+data.place_of_origin+"</p>Description: "+data.description+"</div>";
+    let x ="<div id=imgmodal><img src='"+img_src+"' class=image_detail></img><div>"+"<div id=modalcontent><p id='m_title'>"+data.title+"</p><p>"+data.artist_display+"<p>ID: "+data.id+"</p> <p> Score: "+data._score+"</p>  </p>"+"</p>Date: "+data.date_display+"</p>Artwork Type: "+data.artwork_type_title+"</p>Place of Origin: "+data.place_of_origin+"</p>Description: "+data.description+"</div>";
     document.getElementById("detail").innerHTML = x;
     modalopen();
 }
