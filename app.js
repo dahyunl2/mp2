@@ -79,7 +79,7 @@ async function generateList(){
             title=title.substring(0,201);
         }
         
-        x = x + "<div class='listItem' onclick=detail("+i.toString()+")><img src='"+image_src+"'class=image></img>"+"<div id=content><p>title: "+title+"</p><p>artist: "+artist+"</p> </div></div>";
+        x = x + "<div class='listItem' onclick=detail("+i.toString()+")><img src='"+image_src+"'class=image></img>"+"<div id=content><p id='title'>"+title+"</p><p>"+artist+"</p id='artist'> </div></div>";
     }
       document.getElementById("list").innerHTML = x;
       document.getElementById('loader').style.display="none"

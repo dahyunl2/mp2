@@ -48,6 +48,8 @@ body {
       transform: translateY(-50%);
       left: 15%;
       width:70%;
+      height:800px;
+      overflow-y: auto;
       /* height:500px; */
       /* opacity: 0.8; */
       background-color: lightgoldenrodyellow;
@@ -141,4 +143,16 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+#link{
+  color:bisque;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#title{
+  font-size:x-large;
+    font-style: bold;
+    color: orangered;
 }

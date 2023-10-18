@@ -64,6 +64,8 @@ body {
 
 .image{
     float: left;
+    margin-left: 10px;
+    margin-top: 5px;
     display: flex;
     height:90px;
 }
@@ -150,3 +152,20 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  #title{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+  }
+
+  #link{
+    color:bisque;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+ #search{
+  margin-top: 10px;
+ }
+
