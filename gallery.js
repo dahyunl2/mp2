@@ -40,6 +40,7 @@ async function generateList(fullname, name){
     let x='';
     const listContainer = document.getElementById("list"); 
     let iiif=res.config.iiif_url
+    cnt=0;
     for (let i = 0; i < df.length; i++) {
         // console.log(i)
         let boxData = df[i];
@@ -48,7 +49,8 @@ async function generateList(fullname, name){
             let image_id=boxData.image_id;
             let image_src=iiif+"/"+image_id+"/full/400,/0/default.jpg";
             imgsrc.push(image_src);
-            x=x+ "<img src='"+image_src+"' class=image onclick=detail("+i.toString()+")></img>";
+            x=x+ "<img src='"+image_src+"' class=image onclick=detail("+cnt.toString()+")></img>";
+            cnt++;
         }
     }
         div="<div class=line>"+x+"</div>"

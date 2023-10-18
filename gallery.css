@@ -50,11 +50,14 @@ body {
       width:70%;
       /* height:500px; */
       /* opacity: 0.8; */
-      background-color: lightcyan;
+      background-color: lightgoldenrodyellow;
       display:none;
       z-index: 10;
-      border: #4c9e9e;
-      border-width: 5px;
+      /* border: #4c9e9e;
+      border-width: 5px; */
+      border: 5px solid #4c9e9e;
+      padding: 20px; 
+      border-radius: 25px;
     }
     #modalcontent{
       /* text-align: center; */
