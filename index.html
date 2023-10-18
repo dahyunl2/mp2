@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <script src="app.js"></script>
+            <link rel="stylesheet" href="app.css">
+            <script src="https://kit.fontawesome.com/8c771c831f.js" crossorigin="anonymous"></script>
+            <nav id="navbar">
+                <div id="logo">Chicago Art Institute</div>    
+        
+                <ul id="nav-links">    
+      
+                  <div id="menu">
+                    <li id="search_page"><a href="./index.html">Search</a></li>
+                    <li id="gallery_page"><a href="./gallery.html">Gallery</a></li>
+                  </div>
+                </ul>
+            </nav>
+            <div id='search'>
+                <select id='select_sort'>
+                    <option value='_score'>Sort by: score</option>
+                    <option value='id'>Sort by: id</option>
+                </select>
+                <select id='order'>
+                    <option value='descending'>descending</option>
+                    <option value='ascending'>ascending</option>
+                </select>
+                <input name="item" id="input"/>
+                <!-- <datalist id="item_list">item_names</datalist> -->
+      
+                <button onClick="generateList()"> search </button> 
+            </div>
+            <div id="loader"></div>
+            <div class='list' id='list'>
+            </div>
+            <div id="modal">
+                <button class="close" onclick=closemodal()>&#10006;</button>
+                <div class="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></div>
+                <div id="detail"></div>
+                <!-- <img class='modalimg' src="assets/modal3.jpg"> -->
+                <div class="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></div>
+                
+            </div>
+        </body>
+    </head>
+</html>

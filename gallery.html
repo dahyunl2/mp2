@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <script src="gallery.js"></script>
+            <link rel="stylesheet" href="gallery.css">
+            <script src="https://kit.fontawesome.com/8c771c831f.js" crossorigin="anonymous"></script>
+            <nav id="navbar">
+                <div id="logo">Chicago Art Institute</div>    
+        
+                <ul id="nav-links">    
+      
+                  <div id="menu">
+                    <li id="search_page"><a href="./index.html">Search</a></li>
+                    <li id="gallery_page"><a href="./gallery.html">Gallery</a></li>
+                  </div>
+                </ul>
+            </nav>
+            <div id='filters'>
+                <!-- <button id="all" onclick="generateList('')">All</button>
+                <button id="painting" onclick="generateList('painting')">Painting</button>
+                <button id="water_color" onclick="generateList('watercolor')">Drawing and Watercolor</button>
+                <button id="sculpture" onclick="generateList('sculpture')">Sculpture</button>
+                <button id="print" onclick="generateList('print')">Print</button>
+                <button id="Textile" onclick="generateList('textile')">Textile</button> -->
+                <div id="buttons">
+                    <button id="all" onclick="generateList('','')">All</button>
+                    <button id="Gogh" onclick="generateList('Vincent van Gogh','gogh')">Gogh</button>
+                    <button id="Monet" onclick="generateList('Claude Monet','monet')">Monet</button>
+                    <button id="Renoir" onclick="generateList('Auguste Renoir','renoir')">Renoir</button>
+                    <button id="Chagall" onclick="generateList('Marc Chagall','chagall')">Chagall</button>
+                    <button id="Picasso" onclick="generateList('Pablo Picasso','picasso')">Picasso</button>
+                </div>
+                <div id="text">
+                    <p>Artworks are Sorted by Score (High to Low)</p>
+                </div>
+            
+            </div>
+            <div id="loader"></div>
+            <div class='list' id='list'>
+            </div>
+            <div id="modal">
+                <button class="close" onclick=closemodal()>&#10006;</button>
+                <div class="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></div>
+                <div id="detail"></div>
+                <!-- <img class='modalimg' src="assets/modal3.jpg"> -->
+                <div class="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </body>
+    </head>
+</html>
